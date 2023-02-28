@@ -5,10 +5,69 @@
     <!-- PON UN FAVICON!!! -->
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <!-- CAMBIA EL TITLE!!! -->
     <title>Vite Template</title>
   </head>
   <body>
+    <section class="video-container">
+      <div class="video-information">
+        <div class="bar"></div>
+        <div class="icons-container">
+          <div class="first-options">
+            <img
+              class="icon-video"
+              src="assets/images/pause-solid.svg"
+              alt=""
+              id="play-pause"
+            />
+            <div class="duration-container">
+              <p class="duration-now" id="duration-now"></p>
+              <p>/</p>
+              <p class="duration-total" id="total-duration"></p>
+            </div>
+          </div>
+          <div class="second-options">
+            <div class="volume-container">
+              <input type="range" id="range" class="volume-range" />
+              <img
+                id="volume-icon"
+                class="icon-video volume-icon"
+                src="assets/images/volume-high-solid.svg"
+                alt=""
+              />
+            </div>
+
+            <input type="range" class="volume-range" />
+            <img
+              id="full-screen-icon"
+              class="icon-video"
+              src="assets/images/screen-full-svgrepo-com.svg"
+              alt=""
+            />
+
+            <img
+              id="options-icon"
+              class="icon-video"
+              src="assets/images/points.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <video
+        id="video"
+        class="video"
+        autoplay
+        muted
+        src="https://vaibhav1663.github.io/Youtube-Ambient-Mode/demo-video.mp4"
+      ></video>
+    </section>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
